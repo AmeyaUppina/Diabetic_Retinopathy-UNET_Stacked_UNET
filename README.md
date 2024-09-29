@@ -60,7 +60,7 @@ Developed a novel Stacked UNET model, which integrates multiple UNET architectur
    pip install -r requirements.txt
 3. **Path your Dataset**
    -If you have downloaded the dataset from the given link at kaggle , then place it in both the directories to avoid pathing issues.
-  -run this code before strting the script
+  -run this code on terminal before strting the script
      ```bash
      mkdir Preprocessing
      cd Preprocessing
@@ -74,4 +74,4 @@ Developed a novel Stacked UNET model, which integrates multiple UNET architectur
 
 - Thanks to Kaggle for the dataset and its brilliant interface it provided to execute our code.
 - Thanks to Keras Libraries for providing us with the most flexible and robust cnn layers to build our models.
-- And special thanks to the coding community at stackOverflow for having almost all the solutions for the erros we faced.
+- And special thanks to the coding community at Stack Overflow for having almost all the solutions for the erros we faced.

@@ -72,6 +72,6 @@ Developed a novel Stacked UNET model, which integrates multiple UNET architectur
 
 ## Acknowledgments
 
-- Thanks to Kaggle for the dataset and its brilliant interface it provided to execute our code.
+- Thanks to Kaggle for the dataset and the brilliant interface it provided to execute our code.
 - Thanks to Keras Libraries for providing us with the most flexible and robust CNN layers to build our models.
-- And special thanks to the coding community at Stack Overflow for having almost all the solutions for the erros we faced.
+- And special thanks to the coding community at Stack Overflow for having almost all the solutions for the errors we faced.

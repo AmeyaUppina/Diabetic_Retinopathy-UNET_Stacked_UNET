@@ -27,7 +27,7 @@ The primary objective of this research paper is to study and compare the perform
 ## Models Implemented
 ### UNET Model:
 <br> 
-Implementing the traditional UNET architecture, widely known for its efficiency in medical image segmentation tasks. The model was trained on a dataset of labeled retinal images to accurately identify and segment areas affected by diabetic retinopathy. The training scripts along with the metrics are available in the Single_UNET directory of the repository.
+Implementing the traditional UNET architecture, which is widely known for its efficiency in medical image segmentation tasks. The model was trained on a dataset of labeled retinal images to accurately identify and segment areas affected by diabetic retinopathy. The training scripts along with the metrics are available in the Single_UNET directory of the repository.
 </br>
 </br>
 

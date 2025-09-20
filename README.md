@@ -13,9 +13,9 @@ The primary objective of this research paper is to study and compare the perform
   - Vertical Flip
 ### Dataset Setup
 
-1. **Download the Dataset**:
+1. **Download the Dataset**:<br>
    Download the dataset from [Link](https://www.kaggle.com/competitions/aptos2019-blindness-detection/overview)
-2. **Place the Dataset in the Project**:
+2. **Place the Dataset in the Project**:<br>
    Have the Dataset in the same directory as you will run the code in.
 
 ## Tech Stack

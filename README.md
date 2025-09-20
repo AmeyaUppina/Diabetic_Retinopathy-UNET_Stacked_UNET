@@ -67,7 +67,7 @@ Developed a novel Stacked UNET model, which hierarchically integrates multiple U
      mkdir Data
      cd ..
 4. **Some Changes to be made**
-   </br>In each of the scripts (Single_Stack_UNET.ipynb & 2_Stacked_UNET.ipynb) in cell numbers 1, 3 and 8 the paths needs to be changed,</br> 1 -> "aptos2019-blindness-detection/train.csv"</br> 3 ->"aptos2019-blindness-detection/train_images/{x}.png" & "Preprocessed/Data" </br>8 -> "/Preprocessed/Data" 
+   </br>To get the scripts running, you need to update the file paths. You'll have to adjust the paths for the train.csv file, the training images, and the preprocessed data directory to reflect their correct location on your system.
   </br>
 
 ## Acknowledgments

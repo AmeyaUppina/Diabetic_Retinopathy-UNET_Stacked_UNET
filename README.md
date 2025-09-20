@@ -58,9 +58,8 @@ Developed a novel Stacked UNET model, which hierarchically integrates multiple U
 2. **Install Dependencies**
    ```bash
    pip install -r requirements.txt
-3. **Path your Dataset**
-   -If you have downloaded the dataset from the given link at Kaggle, then place it in both the directories to avoid pathing issues.
-  -Run this code on the terminal before starting the script
+3. **Path your Dataset**: If you have downloaded the dataset from the given link at Kaggle, then place it in both the directories to avoid pathing issues.
+<br>Run this code on the terminal before starting the script
      ```bash
      mkdir Preprocessing
      cd Preprocessing

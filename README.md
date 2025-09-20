@@ -52,7 +52,7 @@ Developed a novel Stacked UNET model, which hierarchically integrates multiple U
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/your-username/Diabetic_Retinoapthy-UNET_StacketUNET.git
+   git clone https://github.com/your-username/Diabetic_Retinoapthy-UNET_Stacket_UNET.git
    cd Diabetic_Retinoapthy-UNET_StacketUNET
 
 2. **Install Dependencies**

@@ -1,5 +1,5 @@
 # Diabetic Retinopathy Detection using UNET and Stacked UNET Architecture
-The primary objective of this research paper is to study and compare the performace UNET architeture and the stacked UNET architecture in the use case of detection of Diabetic Retinopathy.
+The primary objective of this research paper is to study and compare the performance UNET architecture and the stacked UNET architecture in the use case of detection of Diabetic Retinopathy.
 
 ## Dataset
 
@@ -39,7 +39,7 @@ Implementing the traditional UNET architecture, widely known for its efficiency 
 
 ### Stacked UNET Model:
 <br> 
-Developed a novel Stacked UNET model, which integrates multiple UNET architectures in a hierarchical fashion to capture complex features and enhance segmentation performance. This approach aims to improve the sensitivity and specificity of the detection process, particularly for identifying early-stage diabetic retinopathy. The training procedures and model metrics are located in the Stacked_UNET folder of the repository.
+Developed a novel Stacked UNET model, which hierarchically integrates multiple UNET architectures to capture complex features and enhance segmentation performance. This approach aims to improve the sensitivity and specificity of the detection process, particularly for identifying early-stage diabetic retinopathy. The training procedures and model metrics are located in the Stacked_UNET folder of the repository.
 
 </br>
 </br>
@@ -59,15 +59,15 @@ Developed a novel Stacked UNET model, which integrates multiple UNET architectur
    ```bash
    pip install -r requirements.txt
 3. **Path your Dataset**
-   -If you have downloaded the dataset from the given link at kaggle , then place it in both the directories to avoid pathing issues.
-  -run this code on terminal before strting the script
+   -If you have downloaded the dataset from the given link at Kaggle, then place it in both the directories to avoid pathing issues.
+  -Run this code on the terminal before starting the script
      ```bash
      mkdir Preprocessing
      cd Preprocessing
      mkdir Data
      cd ..
 4. **Some Changes to be made**
-   </br>In each of the scripts (Single_Stack_UNET.ipynb & 2_Stacked_UNET.ipynb) in cell numbers 1 , 3 and 8 the paths needs to be changed,</br> 1 -> "aptos2019-blindness-detection/train.csv"</br> 3 ->"aptos2019-blindness-detection/train_images/{x}.png" & "Preprocessed/Data" </br>8 -> "/Preprocessed/Data" 
+   </br>In each of the scripts (Single_Stack_UNET.ipynb & 2_Stacked_UNET.ipynb) in cell numbers 1, 3 and 8 the paths needs to be changed,</br> 1 -> "aptos2019-blindness-detection/train.csv"</br> 3 ->"aptos2019-blindness-detection/train_images/{x}.png" & "Preprocessed/Data" </br>8 -> "/Preprocessed/Data" 
   </br>
 
 ## Acknowledgments

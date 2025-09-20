@@ -26,27 +26,15 @@ The primary objective of this research paper is to study and compare the perform
 
 ## Models Implemented
 ### UNET Model:
-<br> 
 Implementing the traditional UNET architecture, which is widely known for its efficiency in medical image segmentation tasks. The model was trained on a dataset of labeled retinal images to accurately identify and segment areas affected by diabetic retinopathy. The training scripts along with the metrics are available in the Single_UNET directory of the repository.
-</br>
-</br>
-
 <p align= "center">
   <img src="Architectures/UNET.png?raw=true" alt="alt text" width="500" height="300">
-</p>
-
-</br>
 
 ### Stacked UNET Model:
-<br> 
 Developed a novel Stacked UNET model, which hierarchically integrates multiple UNET architectures to capture complex features and enhance segmentation performance. This approach aims to improve the sensitivity and specificity of the detection process, particularly for identifying early-stage diabetic retinopathy. The training procedures and model metrics are located in the Stacked_UNET folder of the repository.
-
-</br>
-</br>
 <p align= "center">
   <img src="Architectures/UNET-2.png?raw=true" alt="alt text" width="900" height="300">
 </p>
-</br>
 
 ## Installation
 

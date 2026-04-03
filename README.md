@@ -13,6 +13,33 @@ This repository compares the performance of UNET and Stacked UNET architectures 
 - `requirements.txt`  
   Python dependencies.
 
+## Dataset
+
+This project uses the APTOS 2019 Blindness Detection dataset from Kaggle:
+
+- https://www.kaggle.com/c/aptos2019-blindness-detection
+
+### Expected folder layout
+
+Download the dataset files from Kaggle (at minimum `train.csv` and the training images folder), then place them in the following structure:
+
+```text
+Preprocessing/
+  Data/
+    train.csv
+    train_images/
+      <image files>
+```
+
+Create the folders:
+
+```bash
+mkdir -p Preprocessing/Data
+```
+
+> Note: The dataset is not included in this repository. You must download it from Kaggle.
+
+
 ## Models Implemented
 ### UNET Model:
 Implementing the traditional UNET architecture, which is widely known for its efficiency in medical image segmentation tasks. The model was trained on a dataset of labeled retinal images to accurately identify and segment areas affected by diabetic retinopathy. The training scripts along with the metrics are available in the Single_UNET directory of the repository.
@@ -50,32 +77,6 @@ Developed a novel Stacked UNET model, which hierarchically integrates multiple U
    ```bash
    pip install -r requirements.txt
    ```
-
-## Dataset
-
-This project uses the APTOS 2019 Blindness Detection dataset from Kaggle:
-
-- https://www.kaggle.com/c/aptos2019-blindness-detection
-
-### Expected folder layout
-
-Download the dataset files from Kaggle (at minimum `train.csv` and the training images folder), then place them in the following structure:
-
-```text
-Preprocessing/
-  Data/
-    train.csv
-    train_images/
-      <image files>
-```
-
-Create the folders:
-
-```bash
-mkdir -p Preprocessing/Data
-```
-
-> Note: The dataset is not included in this repository. You must download it from Kaggle.
 
 ## Usage
 

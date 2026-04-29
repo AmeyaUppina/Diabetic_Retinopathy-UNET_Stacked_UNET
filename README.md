@@ -23,6 +23,10 @@ This project uses the APTOS 2019 Blindness Detection dataset:
 
 > Note: The dataset is not included in this repository. You must download it from Kaggle.
 
+### Pre-processing
+- Resize to `256x256`
+- Convert to grayscale
+
 ### Dataset Setup (Recommended)
 
 To avoid path issues, place data under a single shared directory at the repo root:

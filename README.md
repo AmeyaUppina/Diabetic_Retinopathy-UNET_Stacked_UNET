@@ -1,6 +1,6 @@
 # Enhancing Diabetic Retinopathy Detection with CNN-Based Models: A Comparative Study of UNET and Stacked UNET Architectures
 
-This repository compares the performance of UNET and Stacked UNET architectures for diabetic retinopathy detection / segmentation tasks.
+This repository compares the performance of UNET and Stacked UNET architectures for diabetic retinopathy segmentation tasks using CNN-based models. The project is organized into separate experiment folders for single UNET vs stacked UNET and includes notebooks plus exported metrics.
 
 ## Repository Structure
 
@@ -9,49 +9,55 @@ This repository compares the performance of UNET and Stacked UNET architectures 
 - `Stacked_UNET/`  
   Notebook and metrics for the stacked UNET model.
 - `Architectures/`  
-  Architecture diagrams/images.
+  Architecture diagrams/images used in this README.
 - `requirements.txt`  
   Python dependencies.
+- `.gitignore`  
+  Ignore rules for local data, outputs, checkpoints, etc. (you’ll add this)
+- `docs/`  
+  Documentation for dataset setup (you’ll add this)
 
 ## Dataset
 
-This project uses the APTOS 2019 Blindness Detection dataset from Kaggle:
+This project uses the APTOS 2019 Blindness Detection dataset:
 
-- https://www.kaggle.com/c/aptos2019-blindness-detection
-
-### Expected folder layout
-
-Download the dataset files from Kaggle (at minimum `train.csv` and the training images folder), then place them in the following structure:
-
-```text
-Preprocessing/
-  Data/
-    train.csv
-    train_images/
-      <image files>
-```
-
-Create the folders:
-
-```bash
-mkdir -p Preprocessing/Data
-```
+- [APTOS 2019 Blindness Detection (Kaggle)](https://www.kaggle.com/c/aptos2019-blindness-detection)
 
 > Note: The dataset is not included in this repository. You must download it from Kaggle.
 
+### Dataset Setup (Recommended)
 
+To avoid path issues, place data under a single shared directory at the repo root:
+
+```text
+Diabetic_Retinopathy-UNET_Stacked_UNET/
+  data/
+    APTOS/
+      train.csv
+      train_images/
+        <image files>
+```
+
+> Notes:
+> - The notebooks may contain hard-coded paths. Update them to point to the folders above.
+> - If you prefer a different layout, keep it consistent and update notebook paths accordingly.
 ## Models Implemented
-### UNET Model:
-Implementing the traditional UNET architecture, which is widely known for its efficiency in medical image segmentation tasks. The model was trained on a dataset of labeled retinal images to accurately identify and segment areas affected by diabetic retinopathy. The training scripts along with the metrics are available in the Single_UNET directory of the repository.
-<p align= "center">
-  <img src="Architectures/UNET.png?raw=true" alt="alt text" width="500" height="300">
 
-### Stacked UNET Model:
-Developed a novel Stacked UNET model, which hierarchically integrates multiple UNET architectures to capture complex features and enhance segmentation performance. This approach aims to improve the sensitivity and specificity of the detection process, particularly for identifying early-stage diabetic retinopathy. The training procedures and model metrics are located in the Stacked_UNET folder of the repository.
-<p align= "center">
-  <img src="Architectures/UNET-2.png?raw=true" alt="alt text" width="900" height="300">
+### UNET (Single)
+
+Implements the traditional UNET architecture commonly used for medical image segmentation.
+
+<p align="center">
+  <img src="Architectures/UNET.png?raw=true" alt="UNET architecture" width="650" height="400">
 </p>
 
+### Stacked UNET
+
+Implements a stacked-UNET approach intended to capture richer features and improve segmentation performance.
+
+<p align="center">
+  <img src="Architectures/UNET-2.png?raw=true" alt="Stacked UNET architecture" width="900" height="500">
+</p>
 
 ## Installation
 
@@ -72,7 +78,7 @@ Developed a novel Stacked UNET model, which hierarchically integrates multiple U
    source .venv/bin/activate
    ```
 
-3. Install the requirements:
+3. Install dependencies:
 
    ```bash
    pip install -r requirements.txt
@@ -80,12 +86,14 @@ Developed a novel Stacked UNET model, which hierarchically integrates multiple U
 
 ## Usage
 
-Open the notebook you want to run:
+Run the notebook corresponding to the model you want:
 
-- `Single_UNET/Single_Stack_UNET.ipynb` (single UNET)
-- `Stacked_UNET/2_Stacked_UNET.ipynb` (stacked UNET)
+- Single UNET: `Single_UNET/Single_Stack_UNET.ipynb`
+- Stacked UNET: `Stacked_UNET/2_Stacked_UNET.ipynb`
 
-If the notebooks reference dataset paths, update them to match your local layout (see **Dataset** section above).
+If a notebook fails due to missing files:
+1. Search inside the notebook for dataset path variables/file paths (e.g., `train.csv`, `train_images`, or `data/`).
+2. Update them to match your local dataset directory (see **Dataset Setup**).
 
 ## Tech Stack
 
@@ -99,9 +107,8 @@ If the notebooks reference dataset paths, update them to match your local layout
 
 </div>
 
-## Acknowledgments
+## Acknowledgements
 
-- Thanks to Kaggle for the dataset and the brilliant interface it provided to execute our code.
-- Thanks to Keras Libraries for providing us with the most flexible and robust CNN layers to build our models.
-- And special thanks to the coding community at Stack Overflow for having almost all the solutions for the errors we faced.
-
+- Thanks to Kaggle and the APTOS dataset providers.
+- Thanks to the Keras/TensorFlow ecosystem for the deep learning framework.
+- Thanks to the open-source community resources (e.g., Stack Overflow) for troubleshooting.

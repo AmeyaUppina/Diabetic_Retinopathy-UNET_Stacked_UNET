@@ -14,8 +14,6 @@ This repository compares the performance of UNET and Stacked UNET architectures 
   Python dependencies.
 - `.gitignore`  
   Ignore rules for local data, outputs, checkpoints, etc. (you’ll add this)
-- `docs/`  
-  Documentation for dataset setup (you’ll add this)
 
 ## Dataset
 
